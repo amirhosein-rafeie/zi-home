@@ -21,7 +21,7 @@ html {
 }
 
 @theme inline {
- 
+  /* Primary Shades */
   --color-primary-50: #fdf2f6;
   --color-primary-100: #fce7ef;
   --color-primary-200: #fbcfe0;
