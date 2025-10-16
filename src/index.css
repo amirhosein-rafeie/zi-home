@@ -1,15 +1,69 @@
+@import "tailwindcss";
+
 * {
   transition: background-color 0.25s ease;
-  font-family: "Vazirmatn", sans-serif;
-  font-optical-sizing: auto; 
-  font-style: normal; }
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+html {
+  direction: rtl;
+}
+
 :root {
-  
-  --font-sans: "Vazirmatn", sans-serif;
-  --font-heading: "Vazirmatn", sans-serif; }
+  --font-sans: "Vazirmatn", "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-heading: "Vazirmatn", "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
 [data-theme="theme2"] {
-    --font-sans: "Vazirmatn", monospace;
-    --font-heading: "Vazirmatn", sans-serif;}
- @import "tailwindcss";
+  --font-sans: "Vazirmatn", monospace;
+  --font-heading: "Vazirmatn", sans-serif;
+}
+
+@theme inline {
+ 
+  --color-primary-50: #fdf2f6;
+  --color-primary-100: #fce7ef;
+  --color-primary-200: #fbcfe0;
+  --color-primary-300: #faa7c5;
+  --color-primary-400: #f5719e;
+  --color-primary-500: #ef5a88;
+  --color-primary-700: #bf173e;
+  --color-primary-800: #9e1634;
+  --color-primary-900: #84172f;
+  --color-primary-950: #510616;
+
+  --color-primary: rgb(var(--mui-palette-primary-mainChannel));
+  --color-primary-light: rgb(var(--mui-palette-primary-lightChannel));
+  --color-primary-dark: rgb(var(--mui-palette-primary-darkChannel));
 
  
+  --color-gray-50: #f0f1f1;
+  --color-gray-100: #e1e2e3;
+  --color-gray-200: #d1d4d4;
+  --color-gray-300: #c2c5c6;
+  --color-gray-400: #a4a9aa;
+  --color-gray-500: #858c8d;
+  --color-gray-600: #676f71;
+  --color-gray-700: #52595a;
+  --color-gray-800: #3e4344;
+  --color-gray-900: #292c2d;
+  --color-gray-950: #151617;
+
+  
+  --color-success: rgb(var(--mui-palette-success-mainChannel));
+  --color-warning: rgb(var(--mui-palette-warning-mainChannel));
+  --color-error: rgb(var(--mui-palette-error-mainChannel));
+
+
+  --font-sans: "Vazirmatn", "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-heading: "Vazirmatn", "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-h1: var(--mui-font-h1);
+  --font-h2: var(--mui-font-h2);
+  --font-h3: var(--mui-font-h3);
+
+  --breakpoint-sm: 37.5rem; /* 600px */
+  --breakpoint-md: 56.25rem; /* 900px */
+  --breakpoint-lg: 75rem; /* 1200px */
+  --breakpoint-xl: 96rem; /* 1536px */
+}
