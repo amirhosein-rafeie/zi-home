@@ -51,6 +51,7 @@ import { ReactComponent as Exit } from "./exit.svg";
 import { ReactComponent as Favorite } from "./Favorite.svg";
 import { ReactComponent as Filters } from "./Filters.svg";
 import { ReactComponent as Filter } from "./filtter.svg";
+import { ReactComponent as Globe } from "./globe.svg";
 import { ReactComponent as Goal } from "./goal.svg";
 import { ReactComponent as Google2Logo } from "./google2Logo.svg";
 import { ReactComponent as GridLayout } from "./GridLayout.svg";
@@ -261,4 +262,5 @@ export {
   Youtube,
   ZiPay,
   CouponDiscount,
+  Globe,
 };
