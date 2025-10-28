@@ -1,18 +1,10 @@
-import {
-  Navigation,
-  
-  Autoplay,
-  
-} from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+
 import SlidesNav from "./SlidesNav";
 
-import productData from "../../data/ProductData";
-import etebariBanner from "../../assets/images/etebariBanner.png";
+import productData from "../../../data/ProductData";
+import etebariBanner from "../../../assets/images/etebariBanner.png";
 import Card from "./Card";
 
 const TopSales = () => {

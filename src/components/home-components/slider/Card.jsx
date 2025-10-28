@@ -1,4 +1,4 @@
-import { Favorite } from "../../assets/icons/theIcons/myIcons";
+import { Favorite } from "../../../assets/icons/theIcons/myIcons";
 
 function Card({ item }) {
   return (

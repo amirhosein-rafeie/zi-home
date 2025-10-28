@@ -14,7 +14,7 @@ import {
   StoveInductionPot,
   TageOffer,
   ToolsWenchRuler,
-} from "../../assets/icons/theIcons/myIcons";
+} from "../../../assets/icons/theIcons/myIcons";
 
 const NavMenu = () => {
   return (

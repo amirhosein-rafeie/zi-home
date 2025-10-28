@@ -1,10 +1,9 @@
 import { Typography } from "@mui/material";
 import SecondNav from "./SecondNav";
 import NavMenu from "./NavMenu";
-import heroimage from "../../assets/images/heroimage.png";
+import heroimage from "../../../assets/images/heroimage.png";
 
 import TopSales from "../slider/TopSales";
-import { ArrowLeft } from "../../assets/icons/theIcons/myIcons";
 import WeblogSlider from "../slider/WeblogSlider";
 
 const TopBanner = () => {

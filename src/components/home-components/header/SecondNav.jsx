@@ -4,7 +4,7 @@ import { ShoppingCart } from "@mui/icons-material";
 import { Search } from "@mui/icons-material";
 
 import { ReactSVG } from "react-svg";
-import { Person, Shopping } from "../../assets/icons/theIcons/myIcons";
+import { Person, Shopping } from "../../../assets/icons/theIcons/myIcons";
 
 const SecondNav = () => {
   return (
@@ -42,7 +42,7 @@ const SecondNav = () => {
             <Person className="fill-gray-800 stroke-gray-800" /> ثبت نام | ورود
           </Button>
         </div>
-          <div>
+        <div>
           <Shopping />
         </div>
       </div>

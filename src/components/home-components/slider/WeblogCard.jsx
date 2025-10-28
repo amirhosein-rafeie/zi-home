@@ -1,5 +1,4 @@
-import React from "react";
-import { ArrowLeft3 } from "../../assets/icons/theIcons/myIcons";
+import { ArrowLeft3 } from "../../../assets/icons/theIcons/myIcons";
 import { useState } from "react";
 const WeblogCard = ({ item }) => {
   const [isOpen, setIsOpen] = useState(false);

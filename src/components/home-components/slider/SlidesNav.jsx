@@ -1,5 +1,4 @@
-import React from "react";
-import { ArrowLeft } from "../../assets/icons/theIcons/myIcons";
+import { ArrowLeft } from "../../../assets/icons/theIcons/myIcons";
 
 const SlidesNav = () => {
   return (
