@@ -1,13 +1,13 @@
 import "./index.css";
-import TopBanner from "./components/home-components/header/TopBanner";
-import SpecialSlider from "./components/SpecialSlider";
+
 import Header from "./components/home-components/Header";
+import HeroSection from "./components/home-components/HeroSection";
 
 const App = () => {
   return (
     <div>
       <Header />
-      <SpecialSlider />
+      <HeroSection />
     </div>
   );
 };

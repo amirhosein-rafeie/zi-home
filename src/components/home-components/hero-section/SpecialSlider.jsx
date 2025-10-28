@@ -2,14 +2,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Autoplay } from "swiper/modules";
 
-import products from "../data/data";
-import productCategory from "../data/dataa";
+import products from "../../../data/data";
+import productCategory from "../../../data/dataa";
 
 import Special from "./Special";
-import backContainer from "../assets/images/backkol.png";
-import frame from "../assets/images/frame.png";
-import group from "../assets/images/Group.svg";
-import offer from "../assets/images/offer.png";
+import backContainer from "../../../assets/images/backkol.png";
+import frame from "../../../assets/images/frame.png";
+import group from "../../../assets/images/Group.svg";
+import offer from "../../../assets/images/offer.png";
 
 import Timer from "./Timer";
 
