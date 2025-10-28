@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 import SecondNav from "./SecondNav";
 import NavMenu from "./NavMenu";
-import heroimage from "C:/Users/AmirK/projects/bootcamp/Zhome/test zi-home/test-zi-home/src/assets/images/heroimage.png";
+import heroimage from "../../assets/images/heroimage.png";
 
 import TopSales from "../slider/TopSales";
 import { ArrowLeft } from "../../assets/icons/theIcons/myIcons";
