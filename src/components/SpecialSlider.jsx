@@ -2,16 +2,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Autoplay } from "swiper/modules";
 
-import products from "./data/data";
-import productCategory from "./data/dataa";
+import products from "../data/data";
+import productCategory from "../data/dataa";
 
-import Special from "./Components/Special";
-import backContainer from "./assets/images/backkol.png";
-import frame from "./assets/images/frame.png";
-import group from "./assets/images/Group.svg";
-import offer from "./assets/images/offer.png";
+import Special from "./Special";
+import backContainer from "../assets/images/backkol.png";
+import frame from "../assets/images/frame.png";
+import group from "../assets/images/Group.svg";
+import offer from "../assets/images/offer.png";
 
-import Timer from "./Components/Timer";
+import Timer from "./Timer";
 
 const SpecialSlider = () => {
   return (
@@ -27,7 +27,27 @@ const SpecialSlider = () => {
             </div>
           </div>
 
-          <div className="bg-[#DC2655] lg:bg-white flex w-full lg:w-3/4 h-3/4 lg:h-full">
+          <div
+            className="hidden lg:flex w-1/4 h-full relative"
+            style={{
+              background: `url(${backContainer}) center center`,
+              backgroundSize: "cover",
+            }}
+          >
+            <div className="absolute flex  items-center -space-x-19 top-36 -left-12 z-10">
+              <img src={group} alt="group icon" className="w-[90px] " />
+              <img
+                src={group}
+                alt="group icon"
+                className="w-[90px] opacity-70"
+              />
+            </div>
+            <div className="absolute z-20 top-70 lg:top-73 right-7.5 left-9">
+              <Timer />
+            </div>
+          </div>
+
+          <div className="bg-primary-600 lg:bg-white flex w-full lg:w-3/4 h-3/4 lg:h-full">
             <Swiper
               modules={[Navigation, Autoplay]}
               spaceBetween={20}
@@ -64,26 +84,6 @@ const SpecialSlider = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </div>
-
-          <div
-            className="hidden lg:flex w-1/4 h-full relative"
-            style={{
-              background: `url(${backContainer}) center center`,
-              backgroundSize: "cover",
-            }}
-          >
-            <div className="absolute flex  items-center -space-x-19 top-36 -left-12 z-10">
-              <img src={group} alt="group icon" className="w-[90px] " />
-              <img
-                src={group}
-                alt="group icon"
-                className="w-[90px] opacity-[70%]"
-              />
-            </div>
-            <div className="absolute z-20 top-70 lg:top-73 right-7.5 left-9">
-              <Timer />
-            </div>
           </div>
         </div>
 
