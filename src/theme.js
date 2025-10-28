@@ -4,7 +4,7 @@ const muiTheme = extendTheme({
   cssVarPrefix: "mui",
   direction: "rtl",
   palette: {
-    mode: "light",
+    
     primary: { 
       main: "#dc2655",
       light: "#f5719e",
@@ -56,7 +56,7 @@ const muiTheme = extendTheme({
     },
   },
   typography: {
-    fontFamily: "var(--font-sans)",
+    fontFamily: "Vazirmatn",
     h1: { fontSize: "48px" },
     h2: { fontSize: "40px" },
     h3: { fontSize: "32px" },
