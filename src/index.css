@@ -1,69 +1,88 @@
 @import "tailwindcss";
+
+* {
+  transition: background-color 0.25s ease;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-family: "Vazirmatn" !important;
+}
+svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 1;
+}
+
+html {
+  direction: rtl;
+}
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --font-sans: "Vazirmatn", "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-heading: "Vazirmatn", "Inter", "Segoe UI", system-ui, sans-serif;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+[data-theme="theme2"] {
+  --font-sans: "Vazirmatn", monospace;
+  --font-heading: "Vazirmatn", sans-serif;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+@theme inline {
+  /* Primary Shades */
+  --color-primary-50: #fdf2f6;
+  --color-primary-100: #fce7ef;
+  --color-primary-200: #fbcfe0;
+  --color-primary-300: #faa7c5;
+  --color-primary-400: #f5719e;
+  --color-primary-500: #ef5a88;
+  --color-primary-600: #dc2655;
+  --color-primary-700: #bf173e;
+  --color-primary-800: #9e1634;
+  --color-primary-900: #84172f;
+  --color-primary-950: #510616;
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+  --color-primary: rgb(var(--mui-palette-primary-mainChannel));
+  --color-primary-light: rgb(var(--mui-palette-primary-lightChannel));
+  --color-primary-dark: rgb(var(--mui-palette-primary-darkChannel));
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+  --color-gray-50: #f0f1f1;
+  --color-gray-100: #e1e2e3;
+  --color-gray-200: #d1d4d4;
+  --color-gray-300: #c2c5c6;
+  --color-gray-400: #a4a9aa;
+  --color-gray-500: #858c8d;
+  --color-gray-600: #676f71;
+  --color-gray-700: #52595a;
+  --color-gray-800: #3e4344;
+  --color-gray-900: #292c2d;
+  --color-gray-950: #151617;
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  /* succuces */
+  --color-succuces-500: #00ba88;
+  --color-succuces-600: #00a478;
+  --color-succuces-700: #008364;
+
+  /* warning */
+  --color-warning-500: #f4b740;
+  --color-warning-600: #f3a62c;
+  --color-warning-700: #ec8514;
+
+  /* error */
+  --color-error-500: #f87171;
+  --color-error-600: #ed2e2e;
+  --color-error-700: #dc2626;
+
+  --color-success: rgb(var(--mui-palette-success-mainChannel));
+  --color-warning: rgb(var(--mui-palette-warning-mainChannel));
+  --color-error: rgb(var(--mui-palette-error-mainChannel));
+
+  --font-sans: "Vazirmatn", "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-heading: "Vazirmatn", "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-h1: var(--mui-font-h1);
+  --font-h2: var(--mui-font-h2);
+  --font-h3: var(--mui-font-h3);
+
+  --breakpoint-sm: 37.5rem; /* 600px */
+  --breakpoint-md: 56.25rem; /* 900px */
+  --breakpoint-lg: 75rem; /* 1200px */
+  --breakpoint-xl: 96rem; /* 1536px */
 }
