@@ -1,11 +1,12 @@
 import "./index.css";
 import TopBanner from "./components/home-components/header/TopBanner";
 import SpecialSlider from "./components/SpecialSlider";
+import Header from "./components/home-components/Header";
 
 const App = () => {
   return (
     <div>
-      <TopBanner />
+      <Header />
       <SpecialSlider />
     </div>
   );
