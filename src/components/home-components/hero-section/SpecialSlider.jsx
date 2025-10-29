@@ -1,19 +1,19 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Autoplay } from "swiper/modules";
-
-import products from "../../../data/data";
-import productCategory from "../../../data/dataa";
-
-import Special from "./Special";
 import backContainer from "../../../assets/images/backkol.png";
 import frame from "../../../assets/images/frame.png";
 import group from "../../../assets/images/Group.svg";
 import offer from "../../../assets/images/offer.png";
 
 import Timer from "./Timer";
+import { products } from "../../../data/products";
+import { categories, CATEGORY_MAP } from "../../../data/categories";
+import Card from "../../Card";
 
 const SpecialSlider = () => {
+  const specialProducts = products.slice(0, 4);
+
   return (
     <div className="">
       <div className="max-w-7xl mx-auto">
@@ -72,15 +72,15 @@ const SpecialSlider = () => {
               }}
               navigation={false}
               loop
-              autoplay={{ delay: 1500, reverseDirection: true }}
+              autoplay={{ delay: 1500 }}
               className="h-full w-full"
             >
-              {products.map((item) => (
+              {specialProducts.map((item) => (
                 <SwiperSlide
                   key={item.id}
                   className="flex justify-center items-center"
                 >
-                  <Special item={item} />
+                  <Card item={item} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -114,28 +114,36 @@ const SpecialSlider = () => {
             }}
             navigation
             loop
-            autoplay={{ delay: 1500 }}
+            autoplay={{ delay: 1500, reverseDirection: true }}
             className="h-[220px] w-full"
             style={{
               "--swiper-navigation-size": "18px",
               "--swiper-navigation-color": "black",
             }}
           >
-            {productCategory.map((item) => (
-              <SwiperSlide
-                key={item.id}
-                className="bg-white border border-[#D1D4D4] rounded-2xl shadow flex flex-col justify-center items-center"
-              >
-                <div className="flex items-center justify-center">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-44 h-32 rounded-b-lg flex justify-center object-contain items-center aspect-square"
-                  />
-                </div>
-                <h3 className="mt-2 text-center">{item.title}</h3>
-              </SwiperSlide>
-            ))}
+            {categories
+              .filter(
+                (e) =>
+                  e.id === CATEGORY_MAP.decor ||
+                  e.id === CATEGORY_MAP.kitchen ||
+                  e.id === CATEGORY_MAP.electric ||
+                  e.id === CATEGORY_MAP.light
+              )
+              .map((item) => (
+                <SwiperSlide
+                  key={item.id}
+                  className="bg-white border border-[#D1D4D4] rounded-2xl shadow flex flex-col justify-center items-center"
+                >
+                  <div className="flex items-center justify-center">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-44 h-32 rounded-b-lg flex justify-center object-contain items-center aspect-square"
+                    />
+                  </div>
+                  <h3 className="mt-2 text-center">{item.label}</h3>
+                </SwiperSlide>
+              ))}
           </Swiper>
         </div>
         <div className="flex">

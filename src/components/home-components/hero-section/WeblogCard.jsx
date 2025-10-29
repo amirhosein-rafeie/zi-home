@@ -12,9 +12,7 @@ const WeblogCard = ({ item }) => {
 
   return (
     <div
-      className={`w-72 transition-all ease-in duration-700 min-h-94 border-[1px] border-neutral-300 border-b-neutral-300 bg-amber-400  rounded-[16px] flex flex-col border-b-[5px] ${
-        isOpen === true ? "border-amber-900" : ""
-      }`}
+      className={`w-72 transition-all ease-in duration-700 min-h-94 border-2 border-neutral-300 border-b-neutral-300 rounded-2xl flex flex-col border-b-[5px] `}
     >
       <div>
         <div className="w-[288px] flex flex-col">

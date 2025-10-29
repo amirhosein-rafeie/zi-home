@@ -18,11 +18,11 @@ function Timer() {
   const startTimer = (totalSeconds) => {
     let { hours, minutes, seconds } = getTimeRemaining(totalSeconds);
     setTimer(
-      (hours > 9 ? hours : "0" + hours) +
+      (seconds > 9 ? seconds : "0" + seconds) +
         ":" +
         (minutes > 9 ? minutes : "0" + minutes) +
         ":" +
-        (seconds > 9 ? seconds : "0" + seconds)
+        (hours > 9 ? hours : "0" + hours)
     );
   };
 
@@ -55,14 +55,14 @@ function Timer() {
     return () => clearInterval(Ref.current);
   }, []);
 
-  const labels = ["ساعت", "دقیقه", "ثانیه"];
+  const labels = ["ثانیه", "دقیقه", "ساعت"];
 
   return (
     <div className="flex items-center justify-center gap-3 text-l font-medium text-gray-800">
       {timer.split(":").map((part, index) => (
         <div key={index} className="flex items-center gap-1">
-          <div className="flex flex-col items-center justify-center bg-gray-100 rounded-xl px-3 py-1 shadow-sm min-w-[40px]">
-            <span className="text-2xl font-semibold">
+          <div className="flex flex-col items-center justify-center bg-gray-100 rounded-xl px-3 py-1 shadow-sm min-w-10]">
+            <span className="text-2xl font-semibold text-neutral-800">
               {toPersianDigits(part)}
             </span>
             <span className="text-sm text-gray-500">{labels[index]}</span>

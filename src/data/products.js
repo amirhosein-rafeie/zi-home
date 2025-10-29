@@ -1,0 +1,186 @@
+import moble2nafareSepanta from "../assets/images/moble2nafareSepanta.png";
+import standChoobi from "../assets/images/standChoobi.png";
+import CoffeeMakerDlungi from "../assets/images/CoffeeMakerDlungi.png";
+import yakhchal from "../assets/images/productImages/yakhchal.png";
+import Boshghab from "../assets/images/productImages/Boshghab.png";
+import sorkhKon from "../assets/images/productImages/sorkhKon.png";
+import ghahveSaz from "../assets/images/productImages/ghahveSaz.png";
+import boshgab from "../assets/images/boshghab.png";
+import Abazhor from "../assets/images/Abazhor.png";
+import Cusion from "../assets/images/Cusion.png";
+import LusterSteal from "../assets/images/LusterSteal.png";
+import moblemanCraft from "../assets/images/moblemanCraft.png";
+
+import { CATEGORY_MAP } from "./categories";
+
+export const products = [
+  {
+    id: 1,
+    image: moble2nafareSepanta,
+    title: "مبل دونفره سپنتا",
+    model: "Sepanta-01-NDF",
+    prevprice: "۲,۴۰۰,۰۰۰ تومان",
+    price: "۱,۶۴۰,۰۰۰ تومان",
+    off: "۳۰٪",
+    score: "۴.۳",
+    category: CATEGORY_MAP.decor,
+  },
+  {
+    id: 2,
+    image: standChoobi,
+    title: "استند چوبی اشپزخانه",
+    model: "N-I1TE203aIR",
+    prevprice: "۲,۴۰۰,۰۰۰ تومان",
+    price: "۱,۶۴۰,۰۰۰ تومان",
+    off: "۳۰٪",
+    score: "۴.۳",
+    category: CATEGORY_MAP.kitchen,
+  },
+   {
+    id: 3,
+    image: moble2nafareSepanta,
+    title: "مبل دونفره سپنتا",
+    model: "Sepanta-01-NDF",
+    prevprice: "۲,۴۰۰,۰۰۰ تومان",
+    price: "۱,۶۴۰,۰۰۰ تومان",
+    off: "۳۰٪",
+    score: "۴.۳",
+    category: CATEGORY_MAP.decor,
+  },
+  {
+    id: 4,
+    image: CoffeeMakerDlungi,
+    title: "قهوه ساز دلونگی",
+    model: "N-I1TE 203 aIRlINKS",
+    prevprice: "۲,۴۰۰,۰۰۰ تومان",
+    price: "۱,۶۴۰,۰۰۰ تومان",
+    off: "۳۰٪",
+    score: "۴.۳",
+    category: CATEGORY_MAP.kitchen,
+  },
+ 
+ 
+  {
+    id: 5,
+    image: ghahveSaz,
+    title: "قهوه ساز نسپرسو",
+    model: "N-I1TE203aIR",
+    score: "4.3",
+    prevprice: "2.400.000",
+    price: "1,640,000",
+    off: "۳۰%",
+    category: CATEGORY_MAP.kitchen,
+  },
+  {
+    id: 6,
+    image: Boshghab,
+    title: "ست بشقاب سرامیکی سرو ",
+    model: "N-I1TE 203 aIRlINKS",
+    score: "4.3",
+    prevprice: "2.400.000",
+    price: "1,640,000",
+    off: "۳۰%",
+    category: CATEGORY_MAP.kitchen,
+  },
+  {
+    id: 7,
+    image: sorkhKon,
+    title: "  سرخ کن بدون روغن ",
+    model: "Sepanta-01-NDF",
+    score: "4.3",
+    prevprice: "2.400.000",
+    price: "1,640,000",
+    off: "۳۰%",
+    category: CATEGORY_MAP.kitchen,
+  },
+
+  {
+    id: 8,
+    image: moblemanCraft,
+    title: "مبلمان کرفت بالسا",
+    model: "Furniture-woolen-0048",
+    prevprice: "۲,۴۰۰,۰۰۰ تومان",
+    price: "۱,۶۴۰,۰۰۰ تومان",
+    off: "۳۰٪",
+    score: "۴.۳",
+    category: CATEGORY_MAP.decor,
+  },
+  {
+    id: 9,
+    image: LusterSteal,
+    title: "لوستر استیل",
+    model: "N-ITE 20a",
+    prevprice: "۲,۴۰۰,۰۰۰ تومان",
+    price: "۱,۶۴۰,۰۰۰ تومان",
+    off: "۳۰٪",
+    score: "۴.۳",
+    category: CATEGORY_MAP.decor,
+  },
+  {
+    id: 10,
+    image: Cusion,
+    title: "کوسن لینن",
+    model: "Cusion-Linen-546",
+    prevprice: "۲,۴۰۰,۰۰۰ تومان",
+    price: "۱,۶۴۰,۰۰۰ تومان",
+    off: "۳۰٪",
+    score: "۴.۳",
+    category: CATEGORY_MAP.decor,
+  },
+  {
+    id: 11,
+    image: Abazhor,
+    title: "آباژور رومیزی",
+    model: "N-ITE 20a",
+    prevprice: "۲,۴۰۰,۰۰۰ تومان",
+    price: "۱,۶۴۰,۰۰۰ تومان",
+    off: "۳۰٪",
+    score: "۴.۳",
+    category: CATEGORY_MAP.decor,
+  },
+  {
+    id: 12,
+    image: CoffeeMakerDlungi,
+    title: "قهوه ساز نسپرسو",
+    model: "N-ITE 20a",
+    prevprice: "۲,۴۰۰,۰۰۰ تومان",
+    price: "۱,۶۴۰,۰۰۰ تومان",
+    off: "۳۰٪",
+    score: "۴.۳",
+    category: CATEGORY_MAP.kitchen,
+  },
+  {
+    id: 13,
+    image: yakhchal,
+    title: "یخچال فریزر ایستاده",
+    model: "N-ITE 30a",
+    prevprice: "۲,۴۰۰,۰۰۰ تومان",
+    price: "۱,۶۴۰,۰۰۰ تومان",
+    off: "۳۰٪",
+    score: "۴.۳",
+    category: CATEGORY_MAP.kitchen,
+  },
+  {
+    id: 14,
+    image: boshgab,
+    title: "ست بشقاب سرامیکی سرو",
+    model: "Plate-Ceramic-048",
+    prevprice: "۲,۴۰۰,۰۰۰ تومان",
+    price: "۱,۶۴۰,۰۰۰ تومان",
+    off: "۳۰٪",
+    score: "۴.۳",
+    category: CATEGORY_MAP.kitchen,
+  },
+  
+  {
+    id: 15,
+    image: Abazhor,
+    title: "آباژور رومیزی",
+    model: "N-ITE 20a",
+    prevprice: "۲,۴۰۰,۰۰۰ تومان",
+    price: "۱,۶۴۰,۰۰۰ تومان",
+    off: "۳۰٪",
+    score: "۴.۳",
+    category: CATEGORY_MAP.decor,
+  },
+];
