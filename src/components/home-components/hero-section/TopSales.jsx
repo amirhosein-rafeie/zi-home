@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { products } from "../../../data/products";
 import { categories, CATEGORY_MAP } from "../../../data/categories";
-import etebariBanner from "../../../assets/images/etebariBanner.png";
+import etebariLeft from "../../../assets/images/etebariLeft.png";
+import etebariRight from "../../../assets/images/etebariRight.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import Card from "../../Card";
@@ -86,12 +87,9 @@ export default function TopSales() {
           </Swiper>
         </div>
 
-        <div className="w-[1264px] h-[346px] mt-20 mx-auto">
-          <img
-            src={etebariBanner}
-            alt="banner"
-            className="w-full h-full object-cover rounded-xl"
-          />
+        <div className="lg:flex gap-3 w-[1264px] h-[346px] mt-20 mx-auto">
+         <img src={etebariLeft} className="w-1/2"/>
+         <img src={etebariRight} className="w-1/2" />
         </div>
       </div>
     </div>

@@ -11,14 +11,19 @@ import youtube from "../../assets/images/youtube.svg";
 import twitter from "../../assets/images/twitter.svg";
 import instagram from "../../assets/images/instagram.svg";
 import linkedin from "../../assets/images/linkedin.svg";
+import { DotaDota } from "../../assets/icons/theIcons/myIcons";
 
 function Footer() {
   return (
     <div>
       <div
         style={{ backgroundImage: `url(${backfooter})` }}
-        className="w-full h-[590px] bg-cover flex flex-col "
+        className="w-full h-[590px] bg-cover flex flex-col relative z-0"
       >
+        <div className=" pl-[218px] flex justify-end">
+          <DotaDota className="absolute z-10  w-25! h-25! cursor-pointer " />
+        </div>
+
         <div className="h-16"></div>
         <div className="flex justify-start pr-[108px]">
           <img src={zihome} />
