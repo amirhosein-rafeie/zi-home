@@ -9,7 +9,7 @@ import {
   Truck,
 } from "../../assets/icons/theIcons/myIcons";
 
-import contactBannder from "../../assets/images/contactHero.jpg";
+import AboutBanner from "../../assets/images/AboutHero.jpg";
 import mapBanner from "../../assets/images/mapBanner.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -19,7 +19,7 @@ const About = () => {
   return (
     <div>
       <div className="w-full h-[700px] flex justify-stretch">
-        <img src={contactBannder} />
+        <img src={AboutBanner} />
       </div>
       <div className="pl-[108px] pr-[108px] text-primary-600 flex justify-start pt-20">
         <Globe />
@@ -182,7 +182,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        
+
         <div className="text-[16px] font-bold  flex flex-col justify-start gap-2">
           <span className="text-neutral-950 ">چشم انداز زی هوم</span>
           <div className="text-neutral-500 flex flex-col gap-4">

@@ -1,6 +1,6 @@
-import { extendTheme } from "@mui/material/styles";
+import { createTheme } from "@mui/material/styles";
 
-const muiTheme = extendTheme({
+const muiTheme = createTheme({
   cssVarPrefix: "mui",
   direction: "rtl",
   palette: {
@@ -64,6 +64,10 @@ const muiTheme = extendTheme({
     h5: { fontSize: "20px" },
     h6: { fontSize: "16px" },
   },
+  asterisk: {
+        color: '#dc2655',
+        
+      }
 });
 
 export default muiTheme;
