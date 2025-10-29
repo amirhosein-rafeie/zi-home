@@ -15,7 +15,7 @@ const SpecialSlider = () => {
   const specialProducts = products.slice(0, 4);
 
   return (
-    <div className="">
+    <div className="my-10">
       <div className="max-w-7xl mx-auto">
         <div className="bg-[#DC2655] lg:bg-white lg:flex justify-center h-[480px] lg:h-[380px] ">
           <div className=" visible lg:hidden flex gap-10 justify-between">

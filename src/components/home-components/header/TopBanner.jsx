@@ -1,9 +1,6 @@
 import { Typography } from "@mui/material";
 
 
-import heroimage from "../../../assets/images/heroimage.png";
-
-
 
 const TopBanner = () => {
   return (
@@ -16,16 +13,6 @@ const TopBanner = () => {
           50% تخفیف | فروش بهاره
         </Typography>
       </div>
-      
-      
-      <div className="w-full h-[700px]">
-        <img src={heroimage} />
-      </div>
-      <br/>
-      <br />
-      <br />
-      <br />
-    
     </div>
   );
 };

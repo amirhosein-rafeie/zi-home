@@ -4,9 +4,9 @@ import TopBanner from "./header/TopBanner";
 function Header() {
   return (
     <>
+      <TopBanner />
       <SecondNav />
       <NavMenu />
-      <TopBanner/>
     </>
   );
 }

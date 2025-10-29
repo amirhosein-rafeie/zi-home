@@ -5,12 +5,12 @@ import WeblogSlider from "./hero-section/WeblogSlider";
 
 function HeroSection() {
   return (
-    <>
+    <div className="mt-8">
       <SpecialSlider />
       <Popular />
       <TopSales />
       <WeblogSlider />
-    </>
+    </div>
   );
 }
 
