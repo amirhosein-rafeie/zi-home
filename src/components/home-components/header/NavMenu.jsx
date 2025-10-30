@@ -14,8 +14,8 @@ import {
   StoveInductionPot,
   TageOffer,
   ToolsWenchRuler,
-} from "../../../assets/icons/theIcons/myIcons";
-import heroimage from "../../../assets/images/heroimage.png";
+} from "@/assets/icons/theIcons/myIcons";
+import heroimage from "@/assets/images/heroimage.png";
 
 const NavMenu = () => {
   return (

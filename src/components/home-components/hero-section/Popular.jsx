@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import choobineBanner from "../../../assets/images/choobineBanner.png";
-import { categories, CATEGORY_MAP } from "../../../data/categories";
-import { products } from "../../../data/products";
-import Card from "../../Card";
+import choobineBanner from "@/assets/images/choobineBanner.png";
+import { categories, CATEGORY_MAP } from "@/data/categories";
+import { products } from "@/data/products";
+import Card from "@/components/Card";
 
 const Popular = () => {
   const [activeCategory, setActiveCategory] = useState(CATEGORY_MAP.decor);
@@ -27,15 +27,15 @@ const Popular = () => {
             </span>
           </div>
         </div>
-        <div className="text-xs sm:text-sm md:text-xl lg:text-2xl flex text-neutral-900 gap-2 md:gap-3 lg:gap-5 pr-[108px] pl-[108px] py-5 cursor-pointer">
+        <div className=" text-xs sm:text-sm md:text-lg flex text-neutral-900 gap-2 md:gap-3 lg:gap-5 pr-[108px] pl-[108px] py-5 cursor-pointer">
           <div className="border-r-4 rounded-r border-[#DC2655] "> </div>
           {categories.map((cat) => (
             <div
               key={cat.id}
               onClick={() => setActiveCategory(cat.id)}
-              className={`pr-1  ${
+              className={`pr-1 flex-nowrap ${
                 activeCategory === cat.id
-                  ? "text-primary-600 hover:border-b-2 hover:border-primary-600 active:border-primary-600"
+                  ? "text-primary-600 hover:border-b-2 hover:border-primary-600  active:border-primary-600"
                   : "hover:text-primary-600 "
               }`}
             >

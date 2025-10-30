@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { products } from "../../../data/products";
-import { categories, CATEGORY_MAP } from "../../../data/categories";
-import etebariLeft from "../../../assets/images/etebariLeft.png";
-import etebariRight from "../../../assets/images/etebariRight.png";
+import { products } from "@/data/products";
+import { categories, CATEGORY_MAP } from "@/data/categories";
+import etebariLeft from "@/assets/images/etebariLeft.png";
+import etebariRight from "@/assets/images/etebariRight.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
-import Card from "../../Card";
+import Card from "@/components/Card";
 
 export default function TopSales() {
   const [activeCategory, setActiveCategory] = useState(CATEGORY_MAP.kitchen);
@@ -28,7 +28,7 @@ export default function TopSales() {
             </span>
           </div>
         </div>
-        <div className="text-xs sm:text-sm md:text-xl lg:text-2xl flex text-neutral-900 gap-2 md:gap-3 lg:gap-5 pr-[108px] pl-[108px] py-5 cursor-pointer">
+        <div className="text-xs sm:text-sm md:text-lg flex text-neutral-900 gap-2 md:gap-3 lg:gap-5 pr-[108px] pl-[108px] py-5 cursor-pointer">
           <div className="border-r-4 rounded-r border-[#DC2655] "> </div>
           {categories.map((cat) => (
             <div

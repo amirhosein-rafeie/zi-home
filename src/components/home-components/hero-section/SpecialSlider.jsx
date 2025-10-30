@@ -9,7 +9,7 @@ import offer from "../../../assets/images/offer.png";
 import Timer from "./Timer";
 import { products } from "../../../data/products";
 import { categories, CATEGORY_MAP } from "../../../data/categories";
-import Card from "../../Card";
+import Card from "@/components/Card";
 
 const SpecialSlider = () => {
   const specialProducts = products.slice(0, 4);

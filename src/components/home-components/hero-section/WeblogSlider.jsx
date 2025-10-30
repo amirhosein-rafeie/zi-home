@@ -1,8 +1,8 @@
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { ArrowLeft } from "../../../assets/icons/theIcons/myIcons";
-import WeblogCard from "./WeblogCard";
-import weblogData from "../../../data/weblogData";
+import { ArrowLeft } from "@/assets/icons/theIcons/myIcons";
+import WeblogCard from "@/components/home-components/hero-section/WeblogCard";
+import weblogData from "@/data/weblogData";
 
 const WeblogSlider = () => {
   return (

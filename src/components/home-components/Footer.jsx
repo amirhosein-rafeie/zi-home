@@ -1,17 +1,17 @@
-import backfooter from "../../assets/images/backfooter.png";
-import resane from "../../assets/images/resane.png";
-import etehadie from "../../assets/images/etehadie.png";
-import Enamad from "../../assets/images/Enamad.png";
-import lines from "../../assets/images/lines.png";
-import box from "../../assets/images/box.svg";
-import checkmark from "../../assets/images/checkmark.svg";
-import truck from "../../assets/images/truck.svg";
-import zihome from "../../assets/images/zihome.svg";
-import youtube from "../../assets/images/youtube.svg";
-import twitter from "../../assets/images/twitter.svg";
-import instagram from "../../assets/images/instagram.svg";
-import linkedin from "../../assets/images/linkedin.svg";
-import { DotaDota } from "../../assets/icons/theIcons/myIcons";
+import backfooter from "@/assets/images/backfooter.png";
+import resane from "@/assets/images/resane.png";
+import etehadie from "@/assets/images/etehadie.png";
+import Enamad from "@/assets/images/Enamad.png";
+import lines from "@/assets/images/lines.png";
+import box from "@/assets/images/box.svg";
+import checkmark from "@/assets/images/checkmark.svg";
+import truck from "@/assets/images/truck.svg";
+import zihome from "@/assets/images/zihome.svg";
+import youtube from "@/assets/images/youtube.svg";
+import twitter from "@/assets/images/twitter.svg";
+import instagram from "@/assets/images/instagram.svg";
+import linkedin from "@/assets/images/linkedin.svg";
+import { DotaDota } from "@/assets/icons/theIcons/myIcons";
 
 function Footer() {
   return (
