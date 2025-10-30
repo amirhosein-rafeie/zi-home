@@ -14,7 +14,7 @@ const Popular = () => {
 
   return (
     <div>
-      <div className="flex flex-col">
+      <div className="w-full flex flex-col">
         <div className="relative flex py-5 items-center">
           <div className="text-primary-600 pr-[108px] mr-2">
             <span>محبوب ترین</span>
@@ -27,16 +27,16 @@ const Popular = () => {
             </span>
           </div>
         </div>
-        <div className="flex flex-row text-neutral-900 gap-5 pr-[108px] cursor-pointer">
+        <div className="text-xs sm:text-sm md:text-xl lg:text-2xl flex text-neutral-900 gap-2 md:gap-3 lg:gap-5 pr-[108px] pl-[108px] py-5 cursor-pointer">
           <div className="border-r-4 rounded-r border-[#DC2655] "> </div>
           {categories.map((cat) => (
             <div
               key={cat.id}
               onClick={() => setActiveCategory(cat.id)}
-              className={`pr-1 ${
+              className={`pr-1  ${
                 activeCategory === cat.id
-                  ? "text-primary-600"
-                  : "hover:text-primary-600 hover:border-b-2 hover:border-[#DC2655]"
+                  ? "text-primary-600 hover:border-b-2 hover:border-primary-600 active:border-primary-600"
+                  : "hover:text-primary-600 "
               }`}
             >
               <span>{cat.label}</span>
@@ -56,11 +56,16 @@ const Popular = () => {
               centeredSlides={true}
               breakpoints={{
                 360: {
-                  slidesPerView: 2,
+                  slidesPerView: 1,
                   spaceBetween: 20,
                   centeredSlides: true,
                 },
                 768: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                  centeredSlides: false,
+                },
+                900: {
                   slidesPerView: 3,
                   spaceBetween: 40,
                   centeredSlides: false,
@@ -87,7 +92,7 @@ const Popular = () => {
             </Swiper>
           </div>
 
-          <div className="w-[1264px] h-[346px] mt-20 mx-auto">
+          <div className="w-full mt-20 mx-auto">
             <img
               src={choobineBanner}
               alt="banner"

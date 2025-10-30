@@ -8,10 +8,10 @@ import { Person, Shopping } from "../../../assets/icons/theIcons/myIcons";
 
 const SecondNav = () => {
   return (
-    <div className="bg-white flex flex-row justify-between h-[74px] border-b-gray-500 border-b-[1px]">
+    <div className="bg-white flex flex-row justify-between w-full h-[74px] border-b-gray-500 border-b-1">
       <div className=" flex flex-row gap-10 pr-[108px] mr-2 items-center">
-        <img src="./zhomeLogo.png" className="w-[125px] h-[56px]" />
-        <div className="!rounded-[12px] ">
+        <img src="./zhomeLogo.png" className="w-[125px] h-14" />
+        <div className="!rounded-b-xl ">
           <TextField
             placeholder="جستجو"
             variant="outlined"

@@ -29,7 +29,29 @@ const WeblogSlider = () => {
           slidesPerView={4}
           spaceBetween={20}
           loop={true}
-          className="slider-container"
+          className="w-full"
+          breakpoints={{
+            370: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+              centeredSlides: true,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+              centeredSlides: false,
+            },
+            1200: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+              centeredSlides: false,
+            },
+            1366: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+              centeredSlides: false,
+            },
+          }}
         >
           {weblogData.map((e) => (
             <SwiperSlide

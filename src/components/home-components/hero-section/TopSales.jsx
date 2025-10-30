@@ -28,7 +28,7 @@ export default function TopSales() {
             </span>
           </div>
         </div>
-        <div className="flex flex-row text-neutral-900 gap-5 pr-[108px] cursor-pointer">
+        <div className="text-xs sm:text-sm md:text-xl lg:text-2xl flex text-neutral-900 gap-2 md:gap-3 lg:gap-5 pr-[108px] pl-[108px] py-5 cursor-pointer">
           <div className="border-r-4 rounded-r border-[#DC2655] "> </div>
           {categories.map((cat) => (
             <div
@@ -36,8 +36,8 @@ export default function TopSales() {
               onClick={() => setActiveCategory(cat.id)}
               className={`pr-1 ${
                 activeCategory === cat.id
-                  ? "text-primary-600"
-                  : "hover:text-primary-600 hover:border-b-2 hover:border-[#DC2655]"
+                  ? "text-primary-600 hover:border-b-2 hover:border-primary-600 focus:outline-primary-600 active:outline-primary-600"
+                  : "hover:text-primary-600 hover:border-b-2 hover:border-primary-600 focus:outline-primary-600 active:outline-primary-600"
               }`}
             >
               <span>{cat.label}</span>
@@ -56,11 +56,16 @@ export default function TopSales() {
             centeredSlides={true}
             breakpoints={{
               360: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 20,
                 centeredSlides: true,
               },
               768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                centeredSlides: false,
+              },
+              900: {
                 slidesPerView: 3,
                 spaceBetween: 40,
                 centeredSlides: false,
@@ -87,9 +92,9 @@ export default function TopSales() {
           </Swiper>
         </div>
 
-        <div className="lg:flex gap-3 w-[1264px] h-[346px] mt-20 mx-auto">
-         <img src={etebariLeft} className="w-1/2"/>
-         <img src={etebariRight} className="w-1/2" />
+        <div className="lg:flex space-y-3.5 lg:gap-3 w-full mt-20 mb-0 sm:mb-10 md:mb-50 lg:mb-20 mx-auto">
+          <img src={etebariLeft} className="w-full lg:w-1/2 h-50 lg:h-84" />
+          <img src={etebariRight} className="w-full lg:w-1/2 h-50 lg:h-84" />
         </div>
       </div>
     </div>

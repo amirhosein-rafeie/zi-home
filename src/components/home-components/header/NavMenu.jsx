@@ -132,7 +132,7 @@ const NavMenu = () => {
           background: `url(${heroimage}) center center no-repeat`,
           backgroundSize: "cover",
         }}
-        className="h-[700px]"
+        className="h-[700px] w-full"
       />
     </div>
   );
