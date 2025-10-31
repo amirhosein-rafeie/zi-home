@@ -9,7 +9,6 @@ const App = () => {
     <div>
       <ThemeProvider theme={muiTheme}>
         <TopBanner />
-        <Contact />
       </ThemeProvider>
     </div>
   );

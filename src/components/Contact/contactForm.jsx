@@ -3,8 +3,12 @@ import {
   Call,
   Download,
   EmailLetterStyle2,
+  Instagram,
+  Linkedin,
   MarkerPin1,
   Support,
+  Twitter,
+  Youtube,
 } from "../../assets/icons/theIcons/myIcons";
 import Leaflet from "./Leaflet";
 
@@ -161,21 +165,31 @@ const ContactForm = () => {
             <div className="flex-grow border-t border-gray-100"></div>
           </div>
           <div className="flex flex-row justify-end">
-            <div className="flex flex-row !justify-between">
+            <div className="flex flex-row gap-10">
               <div>
-                <span>شبکه های اجتماعی</span>
+                <span className="text-[15px] text-neutral-600">
+                  شبکه های اجتماعی
+                </span>
               </div>
-              <div>
-                <span> salam</span>
+              <div className="flex flex-row gap-1">
+                <div>
+                  <Youtube className="!w-10 !h-10 stroke-neutral-600" />
+                </div>
+                <div>
+                  <Instagram className="!w-10 !h-10 stroke-neutral-600" />
+                </div>
+                <div>
+                  <Twitter className="!w-10 !h-10 stroke-none fill-neutral-600" />
+                </div>
+                <div>
+                  <Linkedin className="!w-10 !h-10 stroke-neutral-600" />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
+     
     </div>
   );
 };
