@@ -3,6 +3,9 @@ import decoration from "../assets/images/decoration.jpg";
 import light from "../assets/images/light.png";
 import electric from "../assets/images/electric.png";
 
+import yakhSideLG from "@/assets/images/productImages/yakhSideLG.png";
+import serviceTeflon from "@/assets/images/productImages/serviceTeflon.png";
+
 export const CATEGORY_MAP = {
   decor: 1,
   kitchen: 2,
@@ -19,4 +22,15 @@ export const categories = [
   { id: CATEGORY_MAP.light, label: "نور و روشنایی", image: light },
   { id: CATEGORY_MAP.equipment, label: "لوازم و تجهیزات", image: "" },
   { id: CATEGORY_MAP.accessories, label: "اکسسوری منزل", image: "" },
+];
+
+export const KITCHEN_MAP = {
+  refrigerator: 1,
+  pot: 2,
+  flatware: 3,
+};
+export const kitchenCat = [
+  { id: KITCHEN_MAP.refrigerator, label: "یخچال فریزر", image: yakhSideLG },
+  { id: KITCHEN_MAP.pot, label: "سرویس قابلمه", image: serviceTeflon },
+  { id: KITCHEN_MAP.flatware, label: "قاشق و چنگال و کارد", image: "" },
 ];

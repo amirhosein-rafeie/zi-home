@@ -28,7 +28,8 @@ export default function TopSales() {
             </span>
           </div>
         </div>
-        <div className="text-xs sm:text-sm md:text-lg flex text-neutral-900 gap-2 md:gap-3 lg:gap-5 pr-[108px] pl-[108px] py-5 cursor-pointer">
+        <div className="text-xs sm:text-sm md:text-lg
+         flex text-neutral-900 gap-2 md:gap-3 lg:gap-5 pr-[108px] pl-[108px] py-5 cursor-pointer">
           <div className="border-r-4 rounded-r border-[#DC2655] "> </div>
           {categories.map((cat) => (
             <div

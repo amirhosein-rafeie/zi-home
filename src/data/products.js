@@ -10,6 +10,14 @@ import Abazhor from "../assets/images/Abazhor.png";
 import Cusion from "../assets/images/Cusion.png";
 import LusterSteal from "../assets/images/LusterSteal.png";
 import moblemanCraft from "../assets/images/moblemanCraft.png";
+import serviceTeflon from "@/assets/images/productImages/serviceTeflon.png";
+import gazTecno from "@/assets/images/productImages/gazTecno.png";
+import mahitabe from "@/assets/images/productImages/mahitabe.png";
+import microwave from "@/assets/images/productImages/microwave.png";
+import yakhSideLG from "@/assets/images/productImages/yakhSideLG.png";
+import gazTecno2 from "@/assets/images/productImages/gazTecno2.png";
+import yakhTwinDipoint from "@/assets/images/productImages/yakhTwinDipoint.png";
+import mahiChodan from "@/assets/images/productImages/mahiChodan.png";
 
 import { CATEGORY_MAP } from "./categories";
 
@@ -36,7 +44,7 @@ export const products = [
     score: "۴.۳",
     category: CATEGORY_MAP.kitchen,
   },
-   {
+  {
     id: 3,
     image: moble2nafareSepanta,
     title: "مبل دونفره سپنتا",
@@ -58,8 +66,7 @@ export const products = [
     score: "۴.۳",
     category: CATEGORY_MAP.kitchen,
   },
- 
- 
+
   {
     id: 5,
     image: ghahveSaz,
@@ -171,7 +178,7 @@ export const products = [
     score: "۴.۳",
     category: CATEGORY_MAP.kitchen,
   },
-  
+
   {
     id: 15,
     image: Abazhor,
@@ -182,5 +189,93 @@ export const products = [
     off: "۳۰٪",
     score: "۴.۳",
     category: CATEGORY_MAP.decor,
+  },
+  {
+    id: 16,
+    image: serviceTeflon,
+    title: "سرویس قابلمه تفلون",
+    model: "AL-lITE 460 aIRlINKS",
+    prevprice: "۲,۴۰۰,۰۰۰ تومان",
+    price: "۱,۶۴۰,۰۰۰ تومان",
+    off: "۳۰٪",
+    score: "۴.۳",
+    category: CATEGORY_MAP.kitchen,
+  },
+  {
+    id: 17,
+    image: gazTecno,
+    title: "اجاق گاز تکنو",
+    model: "N-lITE 203 aIRlINKS",
+    prevprice: "۵/۴۰۰/۰۰۰ تومان",
+    price: "۳,۷۸۰,۰۰۰ تومان",
+    off: "۳۰٪",
+    score: "۴.۳",
+    category: CATEGORY_MAP.kitchen,
+  },
+  {
+    id: 18,
+    image: mahitabe,
+    title: "ست ماهیتابه تفلون",
+    model: "N-lITE 203 aIRlINKS",
+    prevprice: "",
+    price: "۶۴۰,۰۰۰ تومان",
+    off: "۳۰٪",
+    score: "۴.۳",
+    category: CATEGORY_MAP.kitchen,
+  },
+  {
+    id: 19,
+    image: microwave,
+    title: "مایکرویو کنوود240 لیتری",
+    model: "N-lITE 203 aIRlINKS",
+    prevprice: "۴,۴۰۰,۰۰۰ تومان",
+    price: "۳,۶۴۰,۰۰۰تومان",
+    off: "۳۰٪",
+    score: "۴.۳",
+    category: CATEGORY_MAP.kitchen,
+  },
+  {
+    id: 20,
+    image: yakhSideLG,
+    title: "یخچال فریزر ساید بای ساید ال جی",
+    model: "L-LGSS 240 aIRlINKS",
+    prevprice: "۲,۴۰۰,۰۰۰ تومان",
+    price: "۱,۶۴۰,۰۰۰ تومان",
+    off: "۳۰٪",
+    score: "۴.۳",
+    category: CATEGORY_MAP.kitchen,
+  },
+    {
+    id: 21,
+    image: gazTecno2,
+    title:"اجاق گار تکنو",
+    model: "L-LGSS 240 aIRlINKS",
+    prevprice: "۲,۴۰۰,۰۰۰ تومان",
+    price: "۱,۶۴۰,۰۰۰ تومان",
+    off: "۳۰٪",
+    score: "۴.۳",
+    category: CATEGORY_MAP.kitchen,
+  },
+    {
+    id: 22,
+    image:yakhTwinDipoint ,
+    title:"یخچال فریزر دوقلوی دیپوینت",
+    model: "T-POTT 870 aIRlINKS",
+    prevprice: "۲,۴۰۰,۰۰۰ تومان",
+    price: "۱,۶۴۰,۰۰۰ تومان",
+    off: "۳۰٪",
+    score: "۴.۳",
+    category: CATEGORY_MAP.kitchen,
+  },
+     {
+    id: 23,
+    image:mahiChodan,
+    title:"ماهیتابه گریل چدنی",
+    model: "PNN 500 aIRlINKS",
+    prevprice: "۲,۴۰۰,۰۰۰ تومان",
+    price: "۱,۶۴۰,۰۰۰ تومان",
+    off: "۳۰٪",
+    score: "۴.۳",
+    category: CATEGORY_MAP.kitchen,
   },
 ];
