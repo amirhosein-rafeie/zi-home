@@ -1,9 +1,8 @@
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { ArrowLeft } from "../../../assets/icons/theIcons/myIcons";
-import { Typography } from "@mui/material";
-import WeblogCard from "./WeblogCard";
-import weblogData from "../../../data/weblogData";
+import { ArrowLeft } from "@/assets/icons/theIcons/myIcons";
+import WeblogCard from "@/components/home-components/hero-section/WeblogCard";
+import weblogData from "@/data/weblogData";
 
 const WeblogSlider = () => {
   return (
@@ -13,7 +12,7 @@ const WeblogSlider = () => {
           <div className="text-primary-600 pr-[108px] mr-2">
             <span> محبوب ترین</span>
           </div>
-          <div className="flex-grow border-t border-gray-500"></div>
+          <div className="grow border-t border-gray-500"></div>
 
           <div className="text-gray-500 flex flex-row pl-[108px] ml-2">
             <span className="flex flex-row">
@@ -22,7 +21,7 @@ const WeblogSlider = () => {
           </div>
         </div>
       </div>
-      <div className=" min-h-[376px] flex gap-[24px] pl-[108px] pr-[108px]">
+      <div className=" min-h-[376px] flex gap-6 pl-[108px] pr-[108px]">
         <Swiper
           modules={[Pagination, Navigation]}
           dir="rtl"
@@ -30,7 +29,29 @@ const WeblogSlider = () => {
           slidesPerView={4}
           spaceBetween={20}
           loop={true}
-          className="slider-container"
+          className="w-full"
+          breakpoints={{
+            370: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+              centeredSlides: true,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+              centeredSlides: false,
+            },
+            1200: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+              centeredSlides: false,
+            },
+            1366: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+              centeredSlides: false,
+            },
+          }}
         >
           {weblogData.map((e) => (
             <SwiperSlide

@@ -1,6 +1,8 @@
+import Footer from "./components/home-components/Footer";
+import Header from "./components/home-components/Header";
+import HeroSection from "./components/home-components/HeroSection";
+
 import "./index.css";
-import TopBanner from "./components/home-components/header/TopBanner";
-import Contact from "./components/Contact/Contact";
 import muiTheme from "./theme";
 import { ThemeProvider } from "@mui/material";
 
@@ -8,7 +10,9 @@ const App = () => {
   return (
     <div>
       <ThemeProvider theme={muiTheme}>
-        <TopBanner />
+        <Header />
+      <HeroSection />
+      <Footer />
       </ThemeProvider>
     </div>
   );

@@ -1,10 +1,6 @@
 import { Typography } from "@mui/material";
-import SecondNav from "./SecondNav";
-import NavMenu from "./NavMenu";
-import heroimage from "../../../assets/images/heroimage.png";
 
-import TopSales from "../slider/TopSales";
-import WeblogSlider from "../slider/WeblogSlider";
+
 
 const TopBanner = () => {
   return (
@@ -17,18 +13,6 @@ const TopBanner = () => {
           50% تخفیف | فروش بهاره
         </Typography>
       </div>
-      <SecondNav />
-      <NavMenu />
-      <div className="w-full h-[700px]">
-        <img src={heroimage} />
-      </div>
-      <br />
-      <br />
-      <br />
-      <TopSales />
-      <br />
-      <br />
-      <WeblogSlider />
     </div>
   );
 };

@@ -41,6 +41,7 @@ import { ReactComponent as DeliveryTruckCancel } from "./deliveryTruckCancel.svg
 import { ReactComponent as DeliveryTruckClock } from "./DeliveryTruckClock.svg";
 import { ReactComponent as DeliveryTruckFast } from "./DeliveryTruckFast.svg";
 import { ReactComponent as Done } from "./Done.svg";
+import { ReactComponent as DotaDota } from "./DotaDota.svg";
 import { ReactComponent as DoneCheck } from "./DoneCheck.svg";
 import { ReactComponent as Download } from "./download.svg";
 import { ReactComponent as DownloadArrow } from "./downloadArrow.svg";
@@ -130,7 +131,6 @@ import { ReactComponent as ZiPay } from "./ziPay.svg";
 import { ReactComponent as CouponDiscount } from "./CouponDiscount.svg";
 import { ReactComponent as Ranga } from "./Ranga.svg";
 
-
 export {
   AlarmClockTime,
   Alert,
@@ -175,6 +175,7 @@ export {
   DeliveryTruckClock,
   DeliveryTruckFast,
   Done,
+  DotaDota,
   DoneCheck,
   Download,
   DownloadArrow,
