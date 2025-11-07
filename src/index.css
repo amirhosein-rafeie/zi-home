@@ -86,3 +86,7 @@ html {
   --breakpoint-lg: 75rem; /* 1200px */
   --breakpoint-xl: 96rem; /* 1536px */
 }
+
+#myGrid {
+  right: 216px;
+}

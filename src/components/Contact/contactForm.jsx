@@ -120,6 +120,16 @@ const ContactForm = () => {
           <input type="file" hidden />
         </Button>
       </div>
+      <div className="flex justify-end pt-4">
+        <Button
+          type="submit"
+          variant="contained"
+          color="primary"
+          className="w-[161px] py-2 px-4"
+        >
+          ثبت و ارسال
+        </Button>
+      </div>
       <br />
       <br />
       <div className="p-2  flex flex-col gap-3 w-full h-[804px] border border-neutral-200 rounded-2xl ">
@@ -189,7 +199,6 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-     
     </div>
   );
 };

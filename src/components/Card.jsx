@@ -2,7 +2,7 @@ import { Favorite } from "../assets/icons/theIcons/myIcons";
 
 const Card = ({ item }) => {
   return (
-    <div className="bg-white w-full max-w-[288px] mx-auto border border-[#D1D4D4] border-b-4 rounded-2xl shadow flex justify-center items-center flex-col pt-6 pr-4 pb-6 pl-4">
+    <div className="bg-white w-full max-w-[288px] mx-auto border border-[#D1D4D4] border-b-4 rounded-2xl shadow flex justify-center items-center flex-col pt-6 pr-4 pb-6 pl-4 hover:-translate-y-1 hover:ease-out hover:border-primary-600 active:border-primary-800 cursor-pointer">
       <img
         src={item.image}
         alt={item.title}
@@ -12,15 +12,15 @@ const Card = ({ item }) => {
       <div className="gap-6 w-full h-40 grid  grid-rows-2 grid-cols-1">
         <div className="flex justify-between">
           <div>
-            <h3 className="pr-4 text-pretty xl:whitespace-nowrap">
+            <h3 className="pr-1 text-pretty xl:whitespace-nowrap">
               {item.title}
             </h3>
             <h4 className=" text-[#676F71] truncate pr-2 invisible md:visible">
               {item.model}
             </h4>
           </div>
-          <div className="pl-0">
-            <Favorite className="stroke-warning-600" />
+          <div className="pl-0 flex flex-row-reverse gap-1">
+            <Favorite className="stroke-warning-600 active:fill-warning-600 " />
             <p>{item.score}</p>
           </div>
         </div>

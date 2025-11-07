@@ -16,13 +16,14 @@ const App = () => {
     <div>
       <BrowserRouter>
         <ThemeProvider theme={muiTheme}>
+          <ShopMain />
+          <About />
+          <Contact />
           <Routes>
             <Route path="/" element={<HomePage />} />
-              <Route path="/login" element={<LoginPage />} />
-              <ShopMain />
-        <About />
-        <Contact />
-        <Route path="/password:phone" element={<PasswordPage />} />
+            <Route path="/login" element={<LoginPage />} />
+
+            <Route path="/password:phone" element={<PasswordPage />} />
           </Routes>
         </ThemeProvider>
       </BrowserRouter>

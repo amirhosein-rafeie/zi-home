@@ -9,11 +9,11 @@ import microwave from "@/assets/images/productImages/microwave.png";
 
 const ShopSlider = () => {
   return (
-    <div className="pl-[108px] pr-[108px]">
+    <div className="">
       <Swiper
         modules={[Navigation, Autoplay]}
-        spaceBetween={9}
-        slidesPerView={1}
+        spaceBetween={5}
+        slidesPerView={4}
         breakpoints={{
           360: {
             slidesPerView: 1,
@@ -40,10 +40,10 @@ const ShopSlider = () => {
           "--swiper-navigation-size": "0px",
         }}
       >
-        <SwiperSlide>
-          <div className=" border-b-2 border-b-neutral-400 rounded-2xl">
-            <div className="  border min-w-[288px] min-h-[218px] border-neutral-200 rounded-2xl  pt-6 pb-6 pl-4 pr-4 flex flex-col   justify-center items-center">
-              <div className="flex flex-col justify-center items-center text-20 whitespace-nowrap stroke-[80px]">
+        <div className=" border-b-2 border-b-neutral-400 rounded-2xl">
+          <SwiperSlide>
+            <div className="  border w-[288px] min-h-[218px] border-neutral-200 rounded-2xl  pt-6 pb-6 pl-4 pr-4 flex flex-col   justify-center items-center">
+              <div className="flex flex-col justify-center items-center text-20 whitespace-nowrap ">
                 <img
                   className="object-cover top-[-0.5px] w-[177px] h-[125px]"
                   src={yakhCat}
@@ -53,12 +53,12 @@ const ShopSlider = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className=" border-b-2 border-b-neutral-300 rounded-2xl">
-            <div className="  border min-w-[288px] min-h-[218px] border-neutral-200 rounded-2xl  pt-6 pb-6 pl-4 pr-4 flex flex-col   justify-center items-center">
-              <div className="flex flex-col justify-center items-center text-20 whitespace-nowrap stroke-[80px]">
+          </SwiperSlide>
+        </div>
+        <div className=" border-b-2 border-b-neutral-300 rounded-2xl">
+          <SwiperSlide>
+            <div className="  border w-[288px] min-h-[218px] border-neutral-200 rounded-2xl  pt-6 pb-6 pl-4 pr-4 flex flex-col   justify-center items-center">
+              <div className="flex flex-col justify-center items-center text-20 whitespace-nowrap ">
                 <img
                   className="object-cover top-[-0.5px] w-[177px] h-[125px]"
                   src={serviceTeflon}
@@ -68,12 +68,12 @@ const ShopSlider = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className=" border-b-2 border-b-neutral-300 rounded-2xl">
-            <div className="  border min-w-[288px] min-h-[218px] border-neutral-200 rounded-2xl  pt-6 pb-6 pl-4 pr-4 flex flex-col   justify-center items-center">
-              <div className="flex flex-col justify-center items-center text-20 whitespace-nowrap stroke-[80px]">
+          </SwiperSlide>
+        </div>
+        <div className=" border-b-2 border-b-neutral-300 rounded-2xl">
+          <SwiperSlide>
+            <div className="  border w-[288px] min-h-[218px] border-neutral-200 rounded-2xl  pt-6 pb-6 pl-4 pr-4 flex flex-col   justify-center items-center">
+              <div className="flex flex-col justify-center items-center text-20 whitespace-nowrap ">
                 <img
                   className="object-cover top-[-0.5px] w-[177px] h-[125px]"
                   src={flaCat}
@@ -83,12 +83,12 @@ const ShopSlider = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className=" border-b-2 border-b-neutral-300 rounded-2xl">
-            <div className="  border min-w-[288px] min-h-[218px] border-neutral-200 rounded-2xl  pt-6 pb-6 pl-4 pr-4 flex flex-col   justify-center items-center">
-              <div className="flex flex-col justify-center items-center text-20 whitespace-nowrap stroke-[80px]">
+          </SwiperSlide>
+        </div>
+        <div className=" border-b-2 border-b-neutral-300 rounded-2xl">
+          <SwiperSlide>
+            <div className="  border w-[288px] min-h-[218px] border-neutral-200 rounded-2xl  pt-6 pb-6 pl-4 pr-4 flex flex-col   justify-center items-center">
+              <div className="flex flex-col justify-center items-center text-20 whitespace-nowrap ">
                 <img
                   className="object-cover top-[-0.5px] w-[177px] h-[125px]"
                   src={moblemanCraft}
@@ -98,12 +98,12 @@ const ShopSlider = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className=" border-b-2 border-b-neutral-300 rounded-2xl">
-            <div className="  border min-w-[288px] min-h-[218px] border-neutral-200 rounded-2xl  pt-6 pb-6 pl-4 pr-4 flex flex-col   justify-center items-center">
-              <div className="flex flex-col justify-center items-center text-20 whitespace-nowrap stroke-[80px]">
+          </SwiperSlide>
+        </div>
+        <div className=" border-b-2 border-b-neutral-300 rounded-2xl">
+          <SwiperSlide>
+            <div className="  border w-[288px] min-h-[218px] border-neutral-200 rounded-2xl  pt-6 pb-6 pl-4 pr-4 flex flex-col   justify-center items-center">
+              <div className="flex flex-col justify-center items-center text-20 whitespace-nowrap ">
                 <img
                   className="object-cover top-[-0.5px] w-[177px] h-[125px]"
                   src={microwave}
@@ -113,19 +113,19 @@ const ShopSlider = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className=" border-b-2 border-b-neutral-300 rounded-2xl">
-            <div className="  border min-w-[288px] min-h-[218px] border-neutral-200 rounded-2xl  pt-6 pb-6 pl-4 pr-4 flex flex-col   justify-center items-center">
-              <div className="flex flex-col justify-center items-center text-20 whitespace-nowrap stroke-[80px]">
+          </SwiperSlide>
+        </div>
+        <div className=" border-b-2 border-b-neutral-300 rounded-2xl">
+          <SwiperSlide>
+            <div className="  border w-[288px] min-h-[218px] border-neutral-200 rounded-2xl  pt-6 pb-6 pl-4 pr-4 flex flex-col   justify-center items-center">
+              <div className="flex flex-col justify-center items-center text-20 whitespace-nowrap ">
                 <div>
                   <span>محصولات دیگر</span>
                 </div>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
+        </div>
       </Swiper>
     </div>
   );
