@@ -1,7 +1,7 @@
 import { categories } from "@/data/categories";
 function SliderNav({ activeCategory, onSelectCategory }) {
   return (
-    <div className="w-full flex flex-row text-neutral-900 gap-5 pr-[108px] cursor-pointer">
+    <div className="w-full flex flex-row text-neutral-900 gap-5 cursor-pointer">
       <div className="border-r-4 rounded-r border-[#DC2655] "> </div>
       {categories.map((cat) => (
         <div
