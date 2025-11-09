@@ -16,13 +16,44 @@ export const CATEGORY_MAP = {
   light: 6,
 };
 
+
 export const categories = [
-  { id: CATEGORY_MAP.decor, label: "دکوراسیون", image: decoration },
-  { id: CATEGORY_MAP.kitchen, label: "آشپزخانه", image: kitchen },
-  { id: CATEGORY_MAP.electric, label: "لوازم برقی", image: electric },
-  { id: CATEGORY_MAP.light, label: "نور و روشنایی", image: light },
-  { id: CATEGORY_MAP.equipment, label: "لوازم و تجهیزات", image: "" },
-  { id: CATEGORY_MAP.accessories, label: "اکسسوری منزل", image: "" },
+  {
+    id: CATEGORY_MAP.decor,
+    label: "دکوراسیون",
+    image: decoration,
+    brand: "Etsy",
+  },
+  {
+    id: CATEGORY_MAP.kitchen,
+    label: "آشپزخانه",
+    image: kitchen,
+    brand: "Le Creuset",
+  },
+  {
+    id: CATEGORY_MAP.electric,
+    label: "لوازم برقی",
+    image: electric,
+    brand: "Samsung",
+  },
+  {
+    id: CATEGORY_MAP.light,
+    label: "نور و روشنایی",
+    image: light,
+    brand: "Panasonic",
+  },
+  {
+    id: CATEGORY_MAP.equipment,
+    label: "لوازم و تجهیزات",
+    image: "",
+    brand: "Craftsman",
+  },
+  {
+    id: CATEGORY_MAP.accessories,
+    label: "اکسسوری منزل",
+    image: "",
+    brand: "Chumbak",
+  },
 ];
 
 export const KITCHEN_MAP = {

@@ -64,6 +64,7 @@ import { ReactComponent as IconamoonDislikeLight } from "./IconamoonDislikeLight
 import { ReactComponent as Info } from "./info.svg";
 import { ReactComponent as Instagram } from "./Instagram.svg";
 import { ReactComponent as Justify } from "./justify.svg";
+import { ReactComponent as KKK } from "./KKK.svg";
 import { ReactComponent as Like } from "./like.svg";
 import { ReactComponent as Like1 } from "./like1.svg";
 import { ReactComponent as Linkedin } from "./Linkedin.svg";
@@ -264,4 +265,5 @@ export {
   ZiPay,
   CouponDiscount,
   Globe,
+  KKK,
 };

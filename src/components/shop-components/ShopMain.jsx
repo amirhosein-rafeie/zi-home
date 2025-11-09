@@ -1,7 +1,7 @@
 import React from "react";
 import ShopSlider from "./ShopSlider";
 import ShopBar from "./ShopBar";
-import ShopFilters from "./ShopFilters";
+
 
 const ShopMain = () => {
   return (
@@ -16,7 +16,7 @@ const ShopMain = () => {
       <br />
       <br />
       <br />
-      <ShopFilters />
+
       <br />
       <br />
     </div>

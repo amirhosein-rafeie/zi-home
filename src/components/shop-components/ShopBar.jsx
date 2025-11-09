@@ -1,28 +1,18 @@
 import { Filter } from "@/assets/icons/theIcons/myIcons";
 import { Button } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import SliderNav from "../home-components/hero-section/SliderNav";
 import { products } from "@/data/products";
 import Card from "../Card";
-
-function gridChange() {
-  const grid = document.getElementById("myGrid");
-  const button = document.getElementById("filter-btn");
-
-  button.addEventListener("click", () => {
-    if (grid.classList.contains("grid-cols-4")) {
-      grid.classList.remove("grid-cols-4");
-      grid.classList.add("grid-cols-3");
-      document.getElementById("myGrid").style.position = "relative";
-    } else {
-      grid.classList.remove("grid-cols-3");
-      grid.classList.add("grid-cols-4");
-      document.getElementById("myGrid").style.position = "";
-    }
-  });
-}
+import ShopFilters from "./ShopFilters";
+// const grid = document.getElementById("myGrid");
 
 const ShopBar = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const filterFunction = () => {
+    setIsVisible(!isVisible);
+  };
   return (
     <div className="pl-[108px] pr-[108px] flex flex-col gap-[8px] ">
       <div className="pl-[108px] pr-[108px] flex flex-row gap-[8px] ">
@@ -31,8 +21,10 @@ const ShopBar = () => {
             variant="contained"
             color="primary"
             id="filter-btn"
-            className="rounded-[8px] py-2 px-4 !h-10"
-            onClick={gridChange}
+            className={`rounded-[8px] py-2 px-4 !h-10 ${
+              isVisible ? "!hidden" : ""
+            } `}
+            onClick={filterFunction}
           >
             <Filter className="stroke-white" /> فیلترها
           </Button>
@@ -41,10 +33,18 @@ const ShopBar = () => {
           <SliderNav />
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-2" id="myGrid">
-        {products.map((item) => {
-          return <Card item={item} />;
-        })}
+      <div className="flex flex-row">
+         {isVisible && <ShopFilters onClose={filterFunction}/>}
+        <div
+          className={`grid gap-2 ${
+            isVisible ? "grid-cols-3" : "grid-cols-4"
+          }  `}
+          id="myGrid"
+        >
+          {products.map((item) => {
+            return <Card item={item} />;
+          })}
+        </div>
       </div>
     </div>
   );
