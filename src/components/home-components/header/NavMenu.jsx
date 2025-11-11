@@ -15,7 +15,7 @@ import {
   TageOffer,
   ToolsWenchRuler,
 } from "@/assets/icons/theIcons/myIcons";
-import heroimage from "@/assets/images/heroimage.png";
+
 
 const NavMenu = () => {
   return (
@@ -127,13 +127,7 @@ const NavMenu = () => {
           </span>
         </div>
       </div>
-      <div
-        style={{
-          background: `url(${heroimage}) center center no-repeat`,
-          backgroundSize: "cover",
-        }}
-        className="h-[700px] w-full"
-      />
+    
     </div>
   );
 };
