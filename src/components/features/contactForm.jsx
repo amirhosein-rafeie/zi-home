@@ -9,7 +9,7 @@ import {
   Support,
   Twitter,
   Youtube,
-} from "../../assets/icons/theIcons/myIcons";
+} from "@/assets/icons/theIcons/myIcons";
 import Leaflet from "./Leaflet";
 
 const ContactForm = () => {

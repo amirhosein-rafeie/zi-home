@@ -7,17 +7,20 @@ import {
   MedalReward,
   Support,
   Truck,
-} from "../../assets/icons/theIcons/myIcons";
+} from "@/assets/icons/theIcons/myIcons";
 
-import AboutBanner from "../../assets/images/AboutHero.jpg";
-import mapBanner from "../../assets/images/mapBanner.png";
+import AboutBanner from "@/assets/images/AboutHero.jpg";
+import mapBanner from "@/assets/images/mapBanner.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+import Header from "@/components/home-components/Header";
+import Footer from "@/components/home-components/Footer";
 
 const About = () => {
   return (
     <div>
+      <Header />
       <div className="w-full h-[700px] flex justify-stretch">
         <img src={AboutBanner} />
       </div>
@@ -217,6 +220,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

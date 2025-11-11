@@ -1,11 +1,14 @@
 import { Typography } from "@mui/material";
-import contactBanner from "../../assets/images/contactBanner.png";
-import { HomeHouseFavorite } from "../../assets/icons/theIcons/myIcons";
-import ContactForm from "./contactForm";
+import contactBanner from "@/assets/images/contactBanner.png";
+import { HomeHouseFavorite } from "@/assets/icons/theIcons/myIcons";
+import ContactForm from "@/components/features/contactForm";
+import Header from "@/components/home-components/Header";
+import Footer from "@/components/home-components/Footer";
 
 const Contact = () => {
   return (
     <div>
+      <Header />
       <div className="flex bg-cover bg-gradient-to-l from-white via-50% to-black max-w-full ">
         <img src={contactBanner} />
       </div>
@@ -13,7 +16,9 @@ const Contact = () => {
       <br />
       <div className="pl-[108px] pr-[108px]  flex justify-start pt-20">
         <HomeHouseFavorite className="stroke-primary-600" />
-        <Typography variant="h6" color="primary">با زی‌هوم در ارتباط باشید</Typography>
+        <Typography variant="h6" color="primary">
+          با زی‌هوم در ارتباط باشید
+        </Typography>
       </div>
       <div className="pl-[108px] pr-[108px] text-neutral-950">
         <p>
@@ -28,7 +33,7 @@ const Contact = () => {
       <br />
       <ContactForm />
       <br />
-      <br />
+      <Footer />
     </div>
   );
 };

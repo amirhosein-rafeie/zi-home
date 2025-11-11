@@ -10,6 +10,9 @@ import { ThemeProvider } from "@mui/material";
 import HomePage from "@/pages/HomePage";
 import LoginPage from "@/pages/LoginPage";
 import PasswordPage from "@/pages/PasswordPage";
+import NotFound from "@/pages/NotFound";
+import Contact from "@/pages/Contact";
+import About from "@/pages/About";
 
 const App = () => {
   return (
@@ -24,6 +27,9 @@ const App = () => {
             <Route path="/login" element={<LoginPage />} />
 
             <Route path="/password:phone" element={<PasswordPage />} />
+            <Route path="*" element={<NotFound />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/aboutus" element={<About />} />
           </Routes>
         </ThemeProvider>
       </BrowserRouter>
