@@ -29,12 +29,17 @@ const ShopBar = () => {
             <Filter className="stroke-white" /> فیلترها
           </Button>
         </div>
-        <div className="px-5 py-2 h-10">
+        <div
+          className={`px-5 py-2 h-10 ${
+            isVisible ? "!flex !justify-end" : "!flex !justify-end"
+          }
+            `}
+        >
           <SliderNav />
         </div>
       </div>
       <div className="flex flex-row">
-         {isVisible && <ShopFilters onClose={filterFunction}/>}
+        {isVisible && <ShopFilters onClose={filterFunction} />}
         <div
           className={`grid gap-2 ${
             isVisible ? "grid-cols-3" : "grid-cols-4"
