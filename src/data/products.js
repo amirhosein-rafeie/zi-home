@@ -18,7 +18,6 @@ import yakhSideLG from "@/assets/images/productImages/yakhSideLG.png";
 import gazTecno2 from "@/assets/images/productImages/gazTecno2.png";
 import yakhTwinDipoint from "@/assets/images/productImages/yakhTwinDipoint.png";
 import mahiChodan from "@/assets/images/productImages/mahiChodan.png";
-
 import { CATEGORY_MAP } from "./categories";
 
 export const products = [
@@ -66,7 +65,6 @@ export const products = [
     score: "۴.۳",
     category: CATEGORY_MAP.kitchen,
   },
-
   {
     id: 5,
     image: ghahveSaz,
@@ -245,10 +243,10 @@ export const products = [
     score: "۴.۳",
     category: CATEGORY_MAP.kitchen,
   },
-    {
+  {
     id: 21,
     image: gazTecno2,
-    title:"اجاق گار تکنو",
+    title: "اجاق گاز تکنو",
     model: "L-LGSS 240 aIRlINKS",
     prevprice: "۲,۴۰۰,۰۰۰ تومان",
     price: "۱,۶۴۰,۰۰۰ تومان",
@@ -256,10 +254,10 @@ export const products = [
     score: "۴.۳",
     category: CATEGORY_MAP.kitchen,
   },
-    {
+  {
     id: 22,
-    image:yakhTwinDipoint ,
-    title:"یخچال فریزر دوقلوی دیپوینت",
+    image: yakhTwinDipoint,
+    title: "یخچال فریزر دوقلوی دیپوینت",
     model: "T-POTT 870 aIRlINKS",
     prevprice: "۲,۴۰۰,۰۰۰ تومان",
     price: "۱,۶۴۰,۰۰۰ تومان",
@@ -267,10 +265,10 @@ export const products = [
     score: "۴.۳",
     category: CATEGORY_MAP.kitchen,
   },
-     {
+  {
     id: 23,
-    image:mahiChodan,
-    title:"ماهیتابه گریل چدنی",
+    image: mahiChodan,
+    title: "ماهیتابه گریل چدنی",
     model: "PNN 500 aIRlINKS",
     prevprice: "۲,۴۰۰,۰۰۰ تومان",
     price: "۱,۶۴۰,۰۰۰ تومان",

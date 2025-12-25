@@ -1,8 +1,5 @@
-import About from "./components/About/About";
-import Contact from "./components/Contact/Contact";
 import { Route, Routes } from "react-router";
 import { BrowserRouter } from "react-router";
-
 import ShopMain from "./components/shop-components/ShopMain";
 import "./index.css";
 import muiTheme from "./theme";
@@ -20,12 +17,10 @@ const App = () => {
       <BrowserRouter>
         <ThemeProvider theme={muiTheme}>
           <ShopMain />
-          <About />
-          <Contact />
+
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/login" element={<LoginPage />} />
-
             <Route path="/password:phone" element={<PasswordPage />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/contact" element={<Contact />} />
